@@ -31,6 +31,6 @@ public class IconCategoryHolder extends RecyclerView.ViewHolder {
     }
 
     private static int getRotation(boolean collapsed) {
-        return collapsed ? 90 : 0;
+        return collapsed ? -90 : 0;
     }
 }

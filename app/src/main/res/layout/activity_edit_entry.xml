@@ -40,11 +40,11 @@
 
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/profile_drawable"
-                        android:layout_width="100dp"
+                        android:layout_width="146.6dp"
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
 
                     <com.avito.android.krop.KropView
                         android:id="@+id/krop_view"
@@ -52,9 +52,10 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:visibility="invisible"
-                        app:krop_aspectX="1"
-                        app:krop_aspectY="1"
+                        app:krop_aspectX="146666"
+                        app:krop_aspectY="100000"
                         app:krop_offset="70dp"
+                        app:krop_shape="rect"
                         app:krop_overlayColor="#aadddddd">
 
                         <ImageView

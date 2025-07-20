@@ -49,7 +49,7 @@ public class TextDrawableHelper {
                 .width(view.getLayoutParams().width)
                 .height(view.getLayoutParams().height)
                 .endConfig()
-                .buildRound(getFirstGrapheme(text).toUpperCase(), color);
+                .buildRect(getFirstGrapheme(text).toUpperCase(), color);
     }
 
     private static String getFirstGrapheme(String text) {

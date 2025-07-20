@@ -32,26 +32,28 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingStart="14dp">
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/ivTextDrawable"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="65dp"
+                android:layout_height="44.3dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentStart="true"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/ivSelected"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="65dp"
+                android:layout_height="44.3dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
+                android:alpha="0.75"
+                android:background="?attr/colorPrimaryAlternative"
                 android:src="@drawable/item_selected"
                 android:visibility="gone"
-                android:background="?attr/colorPrimaryAlternative"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -60,12 +62,12 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:id="@+id/relativeLayout"
-            android:paddingTop="18dp"
-            android:paddingBottom="16dp"
-            android:paddingEnd="16dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:paddingStart="16dp">
+            android:paddingStart="6dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="10dp">
 
             <RelativeLayout
                 android:layout_width="wrap_content"

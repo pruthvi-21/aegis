@@ -267,6 +267,11 @@
         <item name="android:tint">?attr/colorError</item>
     </style>
 
+    <style name="ShapeAppearanceOverlay.Aegis.ImageView.Box" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
     <style name="ShapeAppearanceOverlay.Aegis.ImageView.Rounded" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">8dp</item>

@@ -49,10 +49,10 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/ivOldImage"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="66dp"
+                android:layout_height="45dp"
                 android:layout_gravity="center_vertical"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
 
             <ImageView
                 android:layout_width="32dp"
@@ -65,10 +65,10 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/ivNewImage"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="66dp"
+                android:layout_height="45dp"
                 android:layout_gravity="center_vertical"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Circle" />
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
 
             <View
                 android:layout_width="0dp"
