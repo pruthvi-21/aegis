@@ -1,0 +1,8 @@
+<resources>
+    <style name="Widget.Aegis.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="materialThemeOverlay">@style/Theme.Aegis.Dark</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Aegis.Chip</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">?attr/colorOutlineVariant</item>
+    </style>
+</resources>

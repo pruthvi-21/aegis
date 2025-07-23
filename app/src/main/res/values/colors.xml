@@ -84,7 +84,7 @@
     <color name="md_theme_dark_inversePrimary">#2b5bb5</color>
     <color name="md_theme_dark_shadow">#000000</color>
     <color name="md_theme_dark_surfaceTint">#b0c6ff</color>
-    <color name="md_theme_dark_outlineVariant">#44464f</color>
+    <color name="md_theme_dark_outlineVariant">#444444</color>
     <color name="md_theme_dark_scrim">#000000</color>
     <color name="md_theme_dark_surface">#131316</color>
     <color name="md_theme_dark_onSurface">#c7c6ca</color>
