@@ -16,8 +16,8 @@ def getGitHash = { -> return getCmdOutput(["git", "rev-parse", "--short", "HEAD"
 def getGitBranch = { -> return getCmdOutput(["git", "rev-parse", "--abbrev-ref", "HEAD"]) }
 
 def packageName = "com.beemdevelopment.aegis"
-def fileProviderAuthority = "${packageName}.fileprovider"
-def fileProviderAuthorityDebug = "${packageName}.debug.fileprovider"
+def fileProviderAuthority = "${packageName}.jilebi.fileprovider"
+def fileProviderAuthorityDebug = "${packageName}.jilebi.debug.fileprovider"
 
 android {
     compileSdk 35
@@ -69,7 +69,7 @@ android {
 
     buildTypes {
         debug {
-            applicationIdSuffix ".debug"
+            applicationIdSuffix ".jilebi.debug"
             manifestPlaceholders = [
                 title: "AegisDev",
                 iconName: "ic_launcher_debug",
@@ -79,6 +79,7 @@ android {
             resValue "bool", "pref_secure_screen_default", "false"
         }
         release {
+            applicationIdSuffix = ".jilebi"
             manifestPlaceholders = [
                 title: "Aegis",
                 iconName: "ic_launcher",
