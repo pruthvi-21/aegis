@@ -153,16 +153,16 @@
         <item name="android:colorBackground">@android:color/black</item>
         <item name="colorSurface">#000000</item>
         <item name="colorSurfaceVariant">#000000</item>
-        <item name="colorSurfaceContainerHighest">#000000</item>
-        <item name="colorSurfaceContainerHigh">#000000</item>
-        <item name="colorSurfaceContainer">#000000</item>
-        <item name="colorSurfaceContainerLow">#000000</item>
-        <item name="colorSurfaceContainerLowest">#000000</item>
-        <item name="colorSurfaceDim">#000000</item>
-        <item name="colorSurfaceBright">#000000</item>
-        <item name="colorCode">@android:color/white</item>
-        <item name="colorCodeHidden">#2F2F2F</item>
-        <item name="colorProgressbar">@android:color/white</item>
+        <item name="colorSurfaceContainerHighest">#333333</item>
+        <item name="colorSurfaceContainerHigh">#242424</item>
+        <item name="colorSurfaceContainer">#161616</item>
+        <item name="colorSurfaceContainerLow">#111111</item>
+        <item name="colorSurfaceContainerLowest">#060606</item>
+        <item name="colorSurfaceDim">#111111</item>
+        <item name="colorSurfaceBright">#333333</item>
+        <item name="colorCode">?attr/colorPrimary</item>
+        <item name="colorCodeHidden">#444444</item>
+        <item name="colorProgressbar">?attr/colorPrimary</item>
     </style>
 
     <style name="ThemeOverlay.Aegis.Dynamic.Dark" parent="ThemeOverlay.Material3.DynamicColors.Dark">
@@ -174,16 +174,16 @@
         <item name="android:colorBackground">@android:color/black</item>
         <item name="colorSurface">#000000</item>
         <item name="colorSurfaceVariant">#000000</item>
-        <item name="colorSurfaceContainerHighest">#000000</item>
-        <item name="colorSurfaceContainerHigh">#000000</item>
-        <item name="colorSurfaceContainer">#000000</item>
-        <item name="colorSurfaceContainerLow">#000000</item>
-        <item name="colorSurfaceContainerLowest">#000000</item>
-        <item name="colorSurfaceDim">#000000</item>
-        <item name="colorSurfaceBright">#000000</item>
-        <item name="colorCode">@android:color/white</item>
-        <item name="colorCodeHidden">#2F2F2F</item>
-        <item name="colorProgressbar">@android:color/white</item>
+        <item name="colorSurfaceContainerHighest">#333333</item>
+        <item name="colorSurfaceContainerHigh">#242424</item>
+        <item name="colorSurfaceContainer">#161616</item>
+        <item name="colorSurfaceContainerLow">#111111</item>
+        <item name="colorSurfaceContainerLowest">#060606</item>
+        <item name="colorSurfaceDim">#111111</item>
+        <item name="colorSurfaceBright">#333333</item>
+        <item name="colorCode">?attr/colorPrimary</item>
+        <item name="colorCodeHidden">#444444</item>
+        <item name="colorProgressbar">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.Aegis.Light" parent="Base.Theme.Aegis.Light">
