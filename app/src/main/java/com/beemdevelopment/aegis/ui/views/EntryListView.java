@@ -73,7 +73,6 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
     private RecyclerView _recyclerView;
     private RecyclerView.ItemDecoration _itemDecoration;
     private ViewPreloadSizeProvider<VaultEntry> _preloadSizeProvider;
-    private TotpProgressBar _progressBar;
     private boolean _showProgress;
     private ViewMode _viewMode;
     private LinearLayout _emptyStateView;
@@ -96,7 +95,6 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_entry_list_view, container, false);
-        _progressBar = view.findViewById(R.id.progressBar);
         _vibrationHelper = new VibrationHelper(getContext());
 
         // set up the recycler view
@@ -305,10 +303,6 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
     }
 
     public void refresh(boolean hard) {
-        if (_showProgress) {
-            _progressBar.restart();
-        }
-
         _adapter.refresh(hard);
     }
 
@@ -376,13 +370,8 @@ public class EntryListView extends Fragment implements EntryAdapter.Listener {
     public void onPeriodUniformityChanged(boolean isUniform, int period) {
         setShowProgress(isUniform);
         if (_showProgress) {
-            _progressBar.setVisibility(View.VISIBLE);
-            _progressBar.setPeriod(period);
-            _progressBar.start();
             onRefreshStart();
         } else {
-            _progressBar.setVisibility(View.GONE);
-            _progressBar.stop();
             onRefreshStop();
         }
     }

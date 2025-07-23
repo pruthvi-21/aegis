@@ -162,6 +162,9 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         _profileName.setText(profileName);
         setAccountNameLayout(_accountNamePosition, !profileIssuer.isEmpty() && !profileName.isEmpty());
 
+        if (_entry.getInfo() instanceof HotpInfo) _progressBar.setVisibility(View.GONE);
+        else _progressBar.setVisibility(_hidden ? View.GONE : View.VISIBLE);
+
         if (_hidden) {
             hideCode();
         } else if (!_paused) {
@@ -371,6 +374,9 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         updateCodes();
         startExpirationAnimation();
         _hidden = false;
+        if (!(_entry.getInfo() instanceof HotpInfo)) {
+            _progressBar.setVisibility(View.VISIBLE);
+        }
     }
 
     public void hideCode() {
@@ -382,6 +388,7 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         updateTextViewWithDots(_nextProfileCode,  hiddenText, code);
 
         _hidden = true;
+        _progressBar.setVisibility(View.GONE);
     }
 
     private void updateTextViewWithDots(TextView textView, String hiddenCode, String code) {

@@ -443,7 +443,7 @@ public class EntryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
             boolean hidden = _tapToReveal && !entry.equals(_focusedEntry);
             boolean paused = _pauseFocused && entry.equals(_focusedEntry);
             boolean dimmed = (_highlightEntry || _tempHighlightEntry) && _focusedEntry != null && !_focusedEntry.equals(entry);
-            boolean showProgress = entry.getInfo() instanceof TotpInfo && ((TotpInfo) entry.getInfo()).getPeriod() != getMostFrequentPeriod();
+            boolean showProgress = true;
             boolean showAccountName = true;
             if (_onlyShowNecessaryAccountNames) {
                 // Only show account name when there's multiple entries found with the same issuer.
