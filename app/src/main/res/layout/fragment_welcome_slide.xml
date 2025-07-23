@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/txtImportHelp"
-        style="@style/Widget.Material3.Button.TonalButton" />
+        style="@style/Widget.Aegis.Button.Primary" />
 
     <TextView
         android:id="@+id/txtImportHelp"

@@ -248,6 +248,14 @@
         <item name="shapeAppearance">@style/ShapeAppearanceOverlay.Aegis.Fab</item>
     </style>
 
+    <style name="Widget.Aegis.Button.Primary" parent="Widget.Material3.Button">
+        <item name="cornerRadius">4dp</item>
+    </style>
+
+    <style name="Widget.Aegis.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="cornerRadius">4dp</item>
+    </style>
+
     <style name="ThemeOverlay.Aegis.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
 
     </style>
