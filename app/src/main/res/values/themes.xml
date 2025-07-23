@@ -241,7 +241,11 @@
         <!-- Magically give the action mode icons the right color -->
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
         <!-- The hack below is necessary to force the action mode overflow menu to the right color -->
-        <item name="actionBarPopupTheme">@style/Widget.Material3.PopupMenu.ContextMenu</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.Aegis.Menu</item>
+    </style>
+
+    <style name="ThemeOverlay.Aegis.Menu" parent="">
+        <item name="colorSurfaceContainer">?colorSurfaceContainerHigh</item>
     </style>
 
     <style name="Widget.Aegis.Fab" parent="Widget.Material3.FloatingActionButton.Primary">
