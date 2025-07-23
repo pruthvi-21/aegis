@@ -244,6 +244,10 @@
         <item name="actionBarPopupTheme">@style/Widget.Material3.PopupMenu.ContextMenu</item>
     </style>
 
+    <style name="Widget.Aegis.Fab" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.Aegis.Fab</item>
+    </style>
+
     <style name="ThemeOverlay.Aegis.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
 
     </style>
@@ -279,5 +283,10 @@
     <style name="ShapeAppearanceOverlay.Aegis.ImageView.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Aegis.Fab" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
     </style>
 </resources>
