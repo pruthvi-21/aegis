@@ -399,7 +399,7 @@ public class EntryHolder extends RecyclerView.ViewHolder {
         float codeWidth = paint.measureText(code);
         float dotsWidth = paint.measureText(hiddenCode);
         float scaleFactor = codeWidth / dotsWidth;
-        scaleFactor = (float)(Math.round(scaleFactor * 10.0) / 10.0);
+        scaleFactor = .66f;//(float)(Math.round(scaleFactor * 10.0) / 10.0);
         textView.setTextColor(MaterialColors.getColor(textView, R.attr.colorCodeHidden));
 
         // If scale is higher or equal to 0.8, do nothing and proceed with the normal text rendering
