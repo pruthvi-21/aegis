@@ -48,6 +48,7 @@ public class TextDrawableHelper {
         return TextDrawable.builder().beginConfig()
                 .width(view.getLayoutParams().width)
                 .height(view.getLayoutParams().height)
+                .fontSize((int) (24 * view.getContext().getResources().getDisplayMetrics().density))
                 .endConfig()
                 .buildRect(getFirstGrapheme(text).toUpperCase(), color);
     }
