@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/Widget.Aegis.Chip"
+    style="@style/Widget.Material3.Chip.Filter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:chipCornerRadius="4dp" />
+    app:chipCornerRadius="4dp"
+    app:chipStrokeColor="?attr/colorOutlineVariant"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.Chip" />

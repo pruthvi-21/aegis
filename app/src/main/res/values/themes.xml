@@ -278,13 +278,6 @@
         <item name="android:tint">?attr/colorError</item>
     </style>
 
-    <style name="Widget.Aegis.Chip" parent="Widget.Material3.Chip.Filter">
-        <item name="materialThemeOverlay">@style/Theme.Aegis.Light</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Aegis.Chip</item>
-        <item name="chipStrokeWidth">1dp</item>
-        <item name="chipStrokeColor">?attr/colorOutlineVariant</item>
-    </style>
-
     <!-- res/values/styles.xml -->
     <style name="ShapeAppearanceOverlay.Aegis.Chip" parent="">
         <item name="cornerSize">2dp</item>
