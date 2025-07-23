@@ -52,7 +52,10 @@
                 android:layout_width="66dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_vertical"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
+                android:clipToOutline="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth=".5dp" />
 
             <ImageView
                 android:layout_width="32dp"
@@ -68,7 +71,10 @@
                 android:layout_width="66dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_vertical"
-                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
+                android:clipToOutline="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box"
+                app:strokeColor="?attr/colorOutlineVariant"
+                app:strokeWidth=".5dp" />
 
             <View
                 android:layout_width="0dp"

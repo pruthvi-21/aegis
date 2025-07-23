@@ -44,7 +44,10 @@
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box" />
+                        android:clipToOutline="true"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Aegis.ImageView.Box"
+                        app:strokeColor="?attr/colorOutlineVariant"
+                        app:strokeWidth=".5dp" />
 
                     <com.avito.android.krop.KropView
                         android:id="@+id/krop_view"
