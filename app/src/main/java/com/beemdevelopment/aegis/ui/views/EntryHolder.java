@@ -45,7 +45,7 @@ import com.google.android.material.color.MaterialColors;
 public class EntryHolder extends RecyclerView.ViewHolder {
     private static final float DEFAULT_ALPHA = 1.0f;
     private static final float DIMMED_ALPHA = 0.2f;
-    private static final char HIDDEN_CHAR = '●';
+    private static final char HIDDEN_CHAR = '✲';
 
     private View _favoriteIndicator;
     private TextView _profileName;
